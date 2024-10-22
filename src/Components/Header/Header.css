@@ -1,0 +1,205 @@
+
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+.headerParentDiv {
+    padding: 15px 20px;
+    background-color: #ffffff; /* Pure white background for a clean look */
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    z-index: 1000;
+    top: 0;
+}
+
+.headerChildDiv {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search Box Styles */
+.placeSearch {
+    width: 18em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px; /* Comfortable padding */
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-radius: 6px; /* Slightly rounded corners */
+    background-color: #f9f9f9; /* Light background for input */
+    transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.placeSearch:hover {
+    border-color: #2196f3; /* Blue border on hover */
+}
+
+.placeSearch input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline */
+    background: transparent; /* Transparent background */
+    width: 100%;
+}
+
+/* Product Search Box */
+.productSearch {
+    width: 32em;
+    height: 40px;
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-radius: 6px; /* Slightly rounded corners */
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for input */
+    transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.productSearch:hover {
+    border-color: #2196f3; /* Blue border on hover */
+}
+
+.productSearch .input {
+    flex-grow: 1; /* Take up all remaining space */
+    padding: 0 10px; /* Add padding */
+}
+
+.productSearch .input input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline */
+    background: transparent; /* Transparent background */
+    width: 100%;
+}
+
+.productSearch .searchAction {
+    width: 48px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #2196f3; /* Blue background */
+    border-radius: 0 6px 6px 0; /* Match rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.productSearch .searchAction:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+}
+
+.productSearch .searchAction svg {
+    fill: white; /* White icon */
+}
+
+/* Language Selector */
+.language {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.language span {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Country Selector */
+#countries {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    font-family: inherit;
+    background: transparent; /* Transparent background */
+    padding: 5px 10px; /* Add padding */
+    font-weight: bold; /* Bold font */
+}
+
+.logoutButton {
+    padding: 10px 20px; /* Spacing around the text */
+    background-color: #f44336; /* Initial background color (red) */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.logoutButton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Alternative Gradient Style */
+.logoutButton.gradient {
+    background: linear-gradient(135deg, #ff5252, #f44336); /* Gradient background */
+}
+
+.logoutButton.gradient:hover {
+    background: linear-gradient(135deg, #e53935, #d32f2f); /* Darker gradient on hover */
+}
+
+/* Button with Icon */
+.logoutButton.withIcon {
+    display: flex;
+    align-items: center; /* Center the text and icon vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.logoutButton.withIcon svg {
+    margin-right: 8px; /* Space between icon and text */
+    fill: white; /* Ensure the icon color matches text */
+}
+
+/* Sell Button */
+.sellMenu {
+    margin-right: 30px;
+    padding: 10px 25px; /* Adjust padding */
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-radius: 20px; /* Rounded border */
+    background-color: #ffffff; /* White background */
+    color: #002f34; /* Dark text color */
+    transition: all 0.3s ease; /* Smooth transition */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text and icon */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sellMenu:hover {
+    background-color: #2196f3; /* Blue background on hover */
+    border-color: #2196f3; /* Match border color */
+    color: white; /* White text */
+}
+
+.sellMenu .sellMenuContent {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.sellMenu .sellMenuContent span {
+    margin-left: 8px; /* Adjust space between icon and text */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 700px) {
+    .placeSearch,
+    .productSearch,
+    .sellMenu {
+        display: none;
+    }
+}

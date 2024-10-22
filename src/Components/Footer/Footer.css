@@ -1,0 +1,81 @@
+.footerParentDiv {
+    width: 100%;
+    height: 32vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerParentDiv .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebeeef;
+    padding: 16px;
+    /* Optional: Add some margin to give space around the footer content */
+    margin: 0 16px;
+    border-radius: 8px; /* To add a modern touch */
+}
+
+.footerParentDiv .content .heading {
+    font-size: 1.5rem; /* Use rem units for font sizes for better scalability */
+    font-weight: bold; /* Use 'bold' instead of 'bolder' for better clarity */
+    color: #002f34; /* Adding color to match footer or primary theme */
+    margin-bottom: 8px; /* Add spacing below heading */
+}
+
+.footerParentDiv .content .list ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footerParentDiv .content .list ul li {
+    font-size: 1rem; /* Standardize list item font size */
+    margin-bottom: 4px; /* Add space between list items */
+    color: #4a4a4a; /* Use a darker color for list items for better readability */
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+    transition: color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.footerParentDiv .content .list ul li:hover {
+    color: #002f34; /* Change color on hover to match the theme */
+}
+
+.footerParentDiv .loginPage {
+    font-size: 1rem; /* Standard font size */
+    color: #002f34; /* Primary theme color */
+    margin-top: 16px; /* Spacing between user info and list */
+    text-align: center; /* Center-align the loginPage content */
+}
+
+.footerParentDiv .loginPage hr {
+    margin-top: 8px; /* Add space above hr */
+    margin-bottom: 0; /* Remove default bottom margin */
+    border: 0.5px solid #002f34; /* Slightly smaller hr */
+    width: 60%; /* Shorter horizontal line */
+}
+
+.footerParentDiv .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px; /* Increase horizontal padding for better spacing */
+    background-color: #002f34; /* Use 'background-color' instead of 'background' */
+    color: #ffffff; /* Use #ffffff for whitesmoke to be explicit */
+    font-size: 0.9rem; /* Smaller font size for footer text */
+}
+
+.footerParentDiv .footer p {
+    margin: 0; /* Maintain no margin */
+}
+
+@media (max-width: 768px) {
+    .footerParentDiv .content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center; /* Center-align content */
+    }
+
+    .footerParentDiv .content .list ul li {
+        margin-bottom: 8px; /* Increase space between items on mobile */
+    }
+}

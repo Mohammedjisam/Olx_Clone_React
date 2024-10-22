@@ -1,0 +1,88 @@
+/* General Styles for Login Container */
+.loginParentDiv {
+    width: 300px; /* Reduced width */
+    padding: 20px; /* Reduced padding */
+    background-color: #ffffff; /* Pure white background */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px; /* Slightly less rounded corners */
+    font-family: "Arial", sans-serif;
+    border: 1px solid #e0e0e0; /* Lighter border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Add a hover effect for more interactivity */
+.loginParentDiv:hover {
+    transform: translate(-50%, -52%); /* Slight lift effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Increased shadow */
+}
+
+/* Form Styles */
+.loginParentDiv form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Consistent spacing between elements */
+}
+
+/* Label Styles */
+.loginParentDiv label {
+    font-size: 14px;
+    color: #555; /* Darker grey for readability */
+    font-weight: 600; /* Slightly bolder font */
+}
+
+/* Input Styles */
+.loginParentDiv .input {
+    border: 1px solid #dcdcdc; /* Light border color */
+    border-radius: 8px; /* Softer corners */
+    padding: 10px; /* Reduced padding */
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Focus Effect on Input */
+.loginParentDiv .input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Softer shadow */
+}
+
+/* Button Styles */
+.loginParentDiv button {
+    width: 100%;
+    height: 44px; /* Slightly reduced height */
+    background-color: #007bff; /* Primary blue color */
+    color: #ffffff; /* White text */
+    font-weight: 600; /* Bolder font */
+    font-size: 15px; /* Slightly reduced font size */
+    border: none;
+    border-radius: 8px; /* Softer corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.loginParentDiv button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2); /* Subtle shadow on hover */
+}
+
+/* Link Styles */
+.loginParentDiv a {
+    margin-top: 15px; /* Reduced spacing */
+    color: #007bff; /* Primary blue color */
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+/* Link Hover Effect */
+.loginParentDiv a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,92 @@
+/* General Styles for Signup Container */
+.signupParentDiv {
+    width: 260px; /* Slightly wider */
+    padding: 10px 15px; /* Reduced padding */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #f0f0f0; /* Light border color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    text-align: center; /* Center-align text */
+}
+
+/* Image Styles */
+.signupParentDiv img {
+    display: block;
+    margin: 0 auto 10px auto; /* Reduced space below */
+    width: 50px; /* Original logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Form Styles */
+.signupParentDiv form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap between form elements */
+}
+
+/* Label Styles */
+.signupParentDiv label {
+    font-size: 13px; /* Original font size */
+    color: #333; /* Darker grey for readability */
+    font-weight: 500; /* Medium text weight */
+    text-align: left; /* Align labels to the left */
+    margin-bottom: 4px; /* Minimal space between label and input */
+}
+
+/* Input Styles */
+.signupParentDiv .input {
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 8px; /* Reduced padding */
+    font-size: 13px; /* Original font size */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    height: 34px; /* Reduced height */
+}
+
+/* Focus Effect on Input */
+.signupParentDiv .input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2); /* Softer blue glow on focus */
+}
+
+/* Button Styles */
+.signupParentDiv button {
+    width: 100%;
+    height: 36px; /* Slightly reduced button height */
+    background: #007bff; /* Solid blue color */
+    color: #ffffff; /* White text */
+    font-weight: 600; /* Bold text */
+    font-size: 13px; /* Original font size */
+    border: none;
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-top: 8px; /* Minimal space above button */
+}
+
+/* Button Hover Effect */
+.signupParentDiv button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.1); /* Subtle shadow on hover */
+}
+
+/* Link Styles */
+.signupParentDiv a {
+    margin-top: 6px; /* Reduced spacing above the link */
+    color: #007bff; /* Blue color */
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px; /* Original font size */
+}
+
+/* Link Hover Effect */
+.signupParentDiv a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

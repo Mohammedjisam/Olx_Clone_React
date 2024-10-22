@@ -1,0 +1,99 @@
+/* Parent Div for Flex Layout */
+.viewParentDiv {
+  padding-top: 4em;
+  display: flex;
+  justify-content: space-between; /* Adds space between the two sections */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 2em; /* Adds space between the image and right section */
+}
+
+/* Image Section */
+.viewParentDiv .imageShowDiv {
+  padding: 16px;
+  width: 65vw;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  background-color: #f2f5ff; /* Soft pastel blue background */
+}
+
+.viewParentDiv .imageShowDiv img {
+  width: 100%; /* Full width to fit the div */
+  height: 85vh;
+  object-fit: cover; /* Ensures the image covers the entire space without distortion */
+  border-radius: 12px; /* Match the border-radius of the parent div */
+}
+
+/* Right Section for Details */
+.viewParentDiv .rightSection {
+  padding: 20px;
+  margin-top: 2em;
+  width: 30vw;
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for more depth */
+  border: 1px solid #e0e0e0; /* Soft gray border for structure */
+}
+
+/* Product Details */
+.viewParentDiv .rightSection .productDetails {
+  border: 1px solid #ffacac; /* Soft pink border */
+  padding: 16px;
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  margin-bottom: 2em;
+  background-color: #ffefef; /* Light pink background */
+  box-shadow: 0 4px 10px rgba(255, 175, 175, 0.2); /* Light inner shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.viewParentDiv .rightSection .productDetails:hover {
+  transform: translateY(-8px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 20px rgba(255, 175, 175, 0.4); /* Enhanced shadow on hover */
+}
+
+.viewParentDiv .rightSection .productDetails :first-child {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #e63946; /* Bold, attractive red */
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+/* Contact Details Section */
+.viewParentDiv .rightSection .contactDetails {
+  border: 1px solid #48cae4; /* Soft blue border */
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #e0f7fa; /* Light cyan background */
+  box-shadow: 0 4px 10px rgba(72, 202, 228, 0.3); /* Light shadow */
+}
+
+.viewParentDiv .rightSection .contactDetails :first-child {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600; /* Slightly bolder */
+  color: #0077b6; /* Darker blue for contrast */
+}
+
+/* General Button Styling */
+.viewParentDiv .rightSection button {
+  background-color: #48cae4; /* Cyan background for buttons */
+  color: #ffffff; /* White text */
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.viewParentDiv .rightSection button:hover {
+  background-color: #0077b6; /* Darker blue on hover */
+}
+
+/* Improve Typography Globally */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
+  color: #333; /* Standard dark color for text */
+}
+
